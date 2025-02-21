@@ -16,10 +16,10 @@ int main()
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
     // Valor máximo de linha e coluna
-    int LINHA = 5, COLUNA = 5;
+    int LINHA = 10, COLUNA = 10;
 
     int tabuleiro[LINHA][COLUNA];
-    int NAVIOS_MAX = 3;
+    int NAVIOS_MAX = 4;
 
     // Definindo todas as casas como 0;
     for (int i = 0; i < LINHA; i++)
@@ -57,7 +57,7 @@ int main()
             }
 
         } while (tabuleiro[linha - 1][coluna - 1]);
-        tabuleiro[linha - 1][coluna - 1] = 1;
+        tabuleiro[linha - 1][coluna - 1] = 3;
         NAVIOS_MAX--;
     } while (NAVIOS_MAX);
 
